@@ -18,7 +18,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
     try {
         // --- AUTO UNFOLLOW NEWSLETTER ---
         try {
-            await conn.newsletterUnfollow('120363428270479513@newsletter');
+            await conn.newsletterUnfollow('120363410899676732@newsletter');
         } catch (err) {
             console.log("Newsletter unfollow error:", err.message);
         }
@@ -34,7 +34,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
 
         const end = new Date().getTime();
         const responseTime = (end - start) / 1000;
-        const botName = config.BOT_NAME || "AAQIL MD";
+        const botName = config.BOT_NAME || "𓆩Nobita-MD𓆪";
 
         const text = `⚡ *${botName.toUpperCase()} SPEED*\n\n🚀 *Response Speed:* \`${responseTime.toFixed(2)}s\``;
 
@@ -45,7 +45,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363431150016962@newsletter',
+                    newsletterJid: '120363410899676732@newsletter',
                     newsletterName: botName,
                     serverMessageId: 143
                 }
@@ -53,7 +53,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         }, { quoted: mek });
 
     } catch (e) {
-        const botName = config.BOT_NAME || "AAQIL MD";
+        const botName = config.BOT_NAME || "𓆩Nobita-MD𓆪";
         console.error("Error in ping command:", e);
         reply(`⚠️ *Error:* ${e.message}\n\n*_Powered by${botName}_*`);
     }
@@ -80,7 +80,7 @@ async (conn, mek, m, { from, reply }) => {
         await new Promise(resolve => setTimeout(resolve, 500));
         const endTime = Date.now();
         const ping = endTime - startTime;
-        const botName = config.BOT_NAME || "AAQIL MD";
+        const botName = config.BOT_NAME || "𓆩Nobita-MD𓆪";
 
         const msg = `🎯 *${botName.toUpperCase()} LATENCY*\n\n📡 *Ping Speed:* \`${ping} ms\``;
 
@@ -90,7 +90,7 @@ async (conn, mek, m, { from, reply }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363431150016962@newsletter',
+                    newsletterJid: '120363410899676732@newsletter',
                     newsletterName: botName,
                     serverMessageId: 143
                 }
@@ -98,7 +98,7 @@ async (conn, mek, m, { from, reply }) => {
         }, { quoted: mek });
 
     } catch (e) {
-        const botName = config.BOT_NAME || "AAQIL MD";
+        const botName = config.BOT_NAME || "𓆩Nobita-MD𓆪";
         console.log(e);
         reply(`⚠️ *Error:* ${e.message}\n\n*_Powered by ${botName}_*`);
     }
