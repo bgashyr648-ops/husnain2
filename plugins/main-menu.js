@@ -64,7 +64,7 @@ async (conn, mek, m, { from, pushname, reply }) => {
         });
 
         // Config variables setup
-        const botName = config.BOT_NAME || "AAQIL MD";
+        const botName = config.BOT_NAME || "𓆩Nobita-MD𓆪";
         const ownerName = config.OWNER_NAME || "Aaqil";
         const uptime = runtime(process.uptime());
         const ramUsed = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2);
@@ -98,7 +98,7 @@ ${menuSections}
                 forwardingScore: 999, 
                 isForwarded: true, 
                 forwardedNewsletterMessageInfo: { 
-                    newsletterJid: '120363431150016962@newsletter', 
+                    newsletterJid: '120363410899676732@newsletter', 
                     newsletterName: botName, 
                     serverMessageId: 143 
                 } 
@@ -106,7 +106,7 @@ ${menuSections}
         }, { quoted: mek });
 
     } catch (e) { 
-        const botName = config.BOT_NAME || "AAQIL MD";
+        const botName = config.BOT_NAME || "𓆩Nobita-MD𓆪";
         reply(`❌ *Error:* ${e.message}\n\n*_Powered by ${botName}_*`); 
     } 
 });
